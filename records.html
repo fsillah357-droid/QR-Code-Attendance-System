@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Logs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <h2>Attendance Records</h2>
+    <div id="log"></div>
+  </div>
+  <script>
+    const records = JSON.parse(localStorage.getItem('attendance') || '[]');
+    const log = document.getElementById('log');
+
+    if (!records || records.length === 0) {
+      log.innerText = "No attendance yet.";
+    } else {
+      // show newest first
+      records.slice().reverse().forEach(r => {
+        log.innerHTML += `<p>${r.fullName} - ${r.purpose} - ${r.time || r.registeredAt}</p>`;
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Logs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+<h2>Attendance Records</h2>
+<div id="log"></div>
+  </div>
+  <script>
+    const records = JSON.parse(localStorage.getItem('attendance') || '[]');
+    const log = document.getElementById('log');
+    if (records.length === 0) {
+      log.innerText = "No attendance yet.";
+    } else {
+      records.forEach(r => {
+        log.innerHTML += `<p>r.fullName -{r.purpose} - ${r.time}</p>`;
+      });
+    }
+  </script>
+</body>
+</html> -->

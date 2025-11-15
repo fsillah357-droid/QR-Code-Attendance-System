@@ -1,54 +1,114 @@
-* { 
-  margin: 0; 
-  padding: 0; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
-}
-.navbar {
-    width: 250px;
-    background-color: #23233c;
-    color: white;
-padding-top: 20px;
-}
- 
-.nav-links {
-list-style: none;
-padding: 0;
+body {
+  background-color: #f4f9ff;
+  color: #1e1e2f;
 }
 
-.nav-links li {
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+/* Main container */
+.main {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 30px;
+  color: #2b3e55;
 }
 
 
-.nav-links li i {
-    margin-right: 10px;
-}
-
-.nav-links li:hover {
-    background-color: #34345a;
-    border-radius: 5px;
+header{
+  text-align: center;
+  font-size: larger;
 
 }
- .content {
-    flex-grow: 1;
-    padding: 40px;
-    background-color: #f5f5f5;
- }
 
- .content h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
- }
+.nav-links{
+  text-align: center;
+  font-size: larger;
+}
 
- .content p {
-    font-size: 16px;
- }
+/* Form inputs */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #cce0f5;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  background-color: #2e8ef0;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #196fd2;
+}
+
+/* QR display */
+#qrcode {
+  margin-top: 20px;
+}
+
+/* Scanner box */
+#reader {
+  width: 300px;
+  margin: auto;
+  border: 2px dashed #2e8ef0;
+  border-radius: 10px;
+  padding: 15px;
+  background: #e8f4ff;
+}
+
+/* Scan result */
+#scan-result {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #278437;
+}
+
+img {
+  background-color: orange;
+  width: 650px;
+  height: 700px;
+}
+
+.imagess{
+  display: flex;
+  gap: 50px;
+}
 
 
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #2c3e50;
+  background-color: #e8f0fe;
+  padding: 20px 25px;
+  border-left: 6px solid #ff6600;
+  border-right: 6px solid #ff6600;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: justify;
+
+}
